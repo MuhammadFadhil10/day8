@@ -41,7 +41,6 @@ func getHome(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		panic(err.Error())
 	}
-	// fmt.Println(projects)
 	view.Execute(w, projects)
 }
 

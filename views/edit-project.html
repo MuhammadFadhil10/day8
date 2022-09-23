@@ -130,19 +130,16 @@
 				<!-- CHECKBOX -->
 				<div class="chekbox d-flex gap-5 mb-3">
 					<div class="form-check form-check-inline">
-						{{range $checkbox := .data.Checkbox}}
 						<input
 							class="form-check-input shadow"
 							type="checkbox"
 							id="inlineCheckbox1"
 							value="nodejs"
 							name="checkbox"
-							checked="{{if $checkbox}} true {{else}} false {{end}}"
 						/>
 						<label class="form-check-label" for="inlineCheckbox1"
 							>Node JS</label
 						>
-						{{end}}
 					</div>
 					<div class="form-check form-check-inline">
 						<input
@@ -151,7 +148,6 @@
 							id="inlineCheckbox2"
 							value="reactjs"
 							name="checkbox"
-							checked="{{if $checkbox}} true {{else}} false {{end}}"
 						/>
 						<label class="form-check-label" for="inlineCheckbox2"
 							>React JS</label
