@@ -85,6 +85,7 @@
 			class="form-container d-flex flex-column align-items-center justify-content-center"
 		>
 			<h1>Update Project</h1>
+			<!-- <h1>{{.data.Duration}}</h1> -->
 			<p id="error-message"></p>
 			<form action="/update-project/{{.index}}" method="POST">
 				<div class="form-floating mb-3">
@@ -93,7 +94,7 @@
 						name="name"
 						class="form-control shadow"
 						id="floatingInput"
-						placeholder="name@example.com"
+						placeholder="name@example.data.com"
 						value="{{.data.Name}}"
 					/>
 					<label for="floatingInput">Project Name</label>
@@ -119,12 +120,8 @@
 					<textarea
 						class="form-control shadow"
 						name="description"
-						placeholder="Leave a comment here"
 						id="floatingTextarea"
-					>
-					{{.data.Description}}
-					</textarea
-					>
+					>{{.data.Description}}</textarea>
 					<label for="floatingTextarea">Description</label>
 				</div>
 				<!-- CHECKBOX -->
